@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Student {
     private Integer id;
-    private Integer student_id;
-    private String name;
+    private Integer StudentNo;
+    private String StudentName;
     private Integer age;
     private String sex;
     private Date birthday;
@@ -18,20 +18,20 @@ public class Student {
         this.id = id;
     }
 
-    public Integer getStudent_id() {
-        return student_id;
+    public Integer getStudentNo() {
+        return StudentNo;
     }
 
-    public void setStudent_id(Integer student_id) {
-        this.student_id = student_id;
+    public void setStudentNo(Integer studentNo) {
+        this.StudentNo = studentNo;
     }
 
-    public String getName() {
-        return name;
+    public String getStudentName() {
+        return StudentName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStudentName(String studentName) {
+        this.StudentName = studentName;
     }
 
     public Integer getAge() {
@@ -56,5 +56,17 @@ public class Student {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", StudentNo=" + StudentNo +
+                ", StudentName='" + StudentName + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                ", birthday=" + birthday +
+                '}';
     }
 }

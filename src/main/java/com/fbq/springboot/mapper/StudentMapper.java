@@ -7,6 +7,6 @@ import java.util.List;
 @Mapper
 public interface StudentMapper {
 
-    @Select("SELECT * FROM student")
+    @Select("SELECT * FROM Student")
     List<Student> findAll();
 }
